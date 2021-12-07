@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+   font-size: 1em;
+   
+}
+body{
+    background: url(https://wallpapercave.com/wp/I7ma7sY.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.main-container{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+    max-height: 1000000px;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow:   0 0 7px rgb(114, 247, 132),
+    
+    0 0 20px rgb(136, 247, 114),
+    0 0 50px rgb(114, 247, 147);
+}
+h1{
+    text-align: center;
+    font-family: 'cookie', Georgia, cursive ;
+    font-weight: 100;
+    font-size: 7rem;
+     color: fff;
+   animation: pulsate 1s infinite alternate;
+   
+}
+
+ 
+@keyframes pulsate {
+    100%{
+        text-shadow: 0 0 7px #fff,
+         0 0 42px #69fe13;
+    }
+    0%{
+        text-shadow: 0 0 7px #fff,
+        0 0 42px #138cfe;;
+    }
+    
+} 
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.search-text{
+    margin: 2.5%;
+    cursor: pointer;
+}
+
+form{
+    position: relative;
+    text-align: center;
+}
+form input{
+    height: 44px;
+    width: 250px;
+    font-size: 1em;
+    border-radius: 50px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid rgb(198, 241, 252);
+    outline: none;
+    box-shadow: 0px 0px 8px rgb(115, 252, 88),
+    0px 0px 25px rgb(93, 252, 88) ,
+    inset 0px 0px 5px rgb(185, 250, 176);
+    transition: 200ms ease-in-out;
+    margin-bottom: 10px;
+}
+
+form input:hover{
+    color: #fff;
+    box-shadow:  
+    0 0 8px #67ff38,
+    0 0 25px #3fff38,
+    inset 0 0 5px #6efa81 ;
+    
+}
+form input:focus{
+    color: #fff;
+    width: 280px;
+    box-shadow:  
+    0 0 8px #4cfc9e,
+    0 0 25px #4cfc9e,
+    inset 0 0 5px #13fe81 ;
+}
+::placeholder{
+    color: rgb(185, 183, 183);
+    font-family: 'Pacifico', cursive;
+
+}
+.btn{
+    border-radius: 50px;
+    height: 45px;
+    width: 100px;
+    outline: none;
+    border: 3px solid rgb(176, 235, 250);
+    background-color: transparent;
+    box-shadow: 0px 0px 8px rgb(107, 252, 88),
+    0px 0px 25px rgb(88, 252, 96) ;
+   color: rgb(165, 233, 250);
+   font-family: 'Pacifico', cursive;;
+}
+.btn:hover{
+    background-color: rgb(176, 235, 250);
+    color: black;
+    cursor: pointer;
+    text-shadow: none;
+    font-weight: 500;
+    box-shadow: 0px 0px 8px rgb(88, 252, 102),
+    0px 0px 25px rgb(88, 252, 110) ;
+    transition: 200ms ease-in-out;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+    font: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+.blank{
+    font-family: 'Nunito', sans-serif;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+  
+}
+.getlyrics{
+    height: 40px;
+    font-size: 1rem;
+    width: 150px;
+    cursor: pointer;
+    border: 3px solid rgb(176, 235, 250);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px rgb(88, 219, 252),
+    0px 0px 15px rgb(88, 219, 252),
+    inset 0px 0px 5px rgb(88, 219, 252) ;
+    margin-top: 8px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    transition:  200ms ease-in-out;
+    margin-bottom: 10px;
+}
+.get{
+    position: absolute;
+    color: rgb(165, 233, 250);
+    transition:  200ms ease-in-out;
+    
+}
+
+.getlyrics:hover {
+    box-shadow: 0px 0px 8px rgb(88, 219, 252),
+    0px 0px 25px rgb(88, 219, 252) ;
+    background-color: rgb(176, 235, 250);
+
+}
+.getlyrics:hover span{
+    color: black;
+    font-weight: 700;
+    text-shadow: none;
+}
+.artist{
+    font-family: 'Playball', cursive;
+    font-size: 1.2em;
+    
+}
+.songlyrics{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+h2{
+    font-family: 'Playball', cursive;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.4rem;
+    
+}
+li{
+    
+    margin: 20px;
+    box-shadow: 0px 0px 8px rgb(88, 219, 252),
+    0px 0px 25px rgb(88, 219, 252) ;
+    border-radius: 30px;
+    transition: 100ms ease-in-out;
+}
+li:hover{
+    box-shadow:  
+    0 0 8px #4cfc9e,
+    0 0 25px #4cfc9e,
+    inset 0 0 5px #13fe81 ;
+}
